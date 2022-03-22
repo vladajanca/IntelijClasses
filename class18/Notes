@@ -1,0 +1,50 @@
+Types of variables:
+3 types- local, instance and static.
+RECAP_______
+Local:
+the variablse that are declare a method or block of code
+PROS: Save memory
+CONS: Limited access can not be access out of method or block of code where they are declared
+
+Instance:
+The variables which are declared inside a class but out of methodor block of code
+PROS: are accessable in all methods of that class
+CONS: memory in those variables is occupy for longer time
+
+Static:
+If instance variable have a "static" keyword they are called static variables
+PROS: Single memory location for all the object of that class
+CONS: can hold only one value for all the pbject and stay even onger in the memory then instance var
+______________________________________________________________________________________________
+ACCESS MODIFIERS
+
+Access modifiers are keywords in java that defines from where a certain variable, method, class etc
+can be accessed.
+
+There are 4 types of access in java that we can define using three keywords
+keywords are:
+1)Private
+2)Protected
+3)Public
+
+type of access are:
+1)Private(keyword is private)
+2)Default(applied when no keyword is used)
+3)Protected (protected class)
+4)Public (Public keyword)
+
+1)Private access
+When we use private keyword with any of th variables, methods or classes
+these can only be accessed within that class.
+
+2)Default access
+When we dont use any of the keywords default is applied by java to those variables, methods or clases
+which means these can only be accessed from the same package.
+
+3)Protected access
+When protected access is applies calss members(variablse, methods etc.) can be accessed
+from other packages but only in the classes that participate in inheritance
+
+4)Public access:
+Public means class members and classes can be accessed from anywhere inside that
+project.

@@ -1,0 +1,50 @@
+Method Overriding in Java
+    Method overriding happens when we have same name methods in parent and child class
+    .
+Benefits of Method Overriding:
+    1) Flexibility If we dont like somethig from parent class we can overwrite it and proovide our own implementation
+    2)Same method can act differently depending on the objects that we call on it
+Rule:
+    1)Without inheretance method overriding is not possible
+    2)Method signature shoud be the same in parent in child class
+    3)If somethig does not participate in inheretance we cant  override it like constructor and private methods
+    4)We can increase the visibility in child classes but we cant decrease it
+    for example we can go from default protected to public but we cant go reverse
+    5)We cant override static method but we can redeclare it, for example main method cant be overridden as it is static
+    6)We cant have different return type
+How many pillars of OOPS do we have?
+    1)Inheritance(Code reusability)
+    2)Polymhorfisam(less code, dynamic behavior(code can change depending on parametars that we pass and object))
+    3)Abstraction(
+    4)Encapsulating
+==========================================================================================================
+Final keyword
+-is used when we dont want our class to be inherited or
+-method from the class to be overwritten
+-when variable is final we cant reassign it, its final
+-some of Java variables are already made final, such as some mathematical constants (P=3.14)
+-also we can use final with constructor, java let us use constructor to assign the value of variable, but once
+it is assign we cant change it no more
+==============================================================================================
+Abstraction
+-is process of hidding a implementations and showing only funcionality
+-Abstraction is the process of separating ideas from their action.
+-We achive 2 things we hide the complexity but we also specify the return
+-In practice when we define method as Abstract we also need to define class where method is as Abstract as well
+once we define method abstract that method doesnt have a body, body we define in child classes
+-In abstract class we cant create an abstract object
+-Abstraction help us reduce the complexity and imptove maintability
+-In examp;e "File" we made class Abstract but not any abstrct method in it, the reason for that is because then
+nobady can create an object of that class and we need to make child classes and
+use inheritance relationship in order to access methods from Abstract parent class
+===============================================================================================
+Polymorphisam
+- we can call only methods which are present in parent class using polymorphisam
+=================================================================================================
+Interface
+-All the variablse in interface is public static and final
+-All the methods in interface which do not have a body are ABSTRATC AND PUBLIC
+-There is no instance variables which means no constructor
+-Because of that interface can support multiple inheritance which is not allowed in classes
+-When we implement class form abstract class we use keyword EXTENDS, when we implement class from interface class
+we use keyword IMPLEMENTS

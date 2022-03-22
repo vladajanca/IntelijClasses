@@ -1,0 +1,36 @@
+Abstract classes in Java
+     Abstract classes in Java are classes with abstract keyword. we use abstract classes to achhive abstraction
+Abstraction:
+     is the process of hidding implementation detals and only showing the functionality to end user.
+Benefits:
+     1)Reduce the conmlexity
+     2)Improves Maintanability of the system( instead writting all logick in same method we
+     can write it in different smaller methods... )
+     3)Can also enforce rules ro a certain limit
+Disadvantiges:
+     1)Classes get tightly coupled(
+e.g. class Dog{
+String name// we can have fields in regular classes
+static int legs=4;//we can have static fields in regular classes
+//concride class(regular class)
+}
+public abstract class Dog{
+String make;//we can also have
+String model;
+static boolean isTrue=true;//we can also have static fields in Abstract
+//
+}
+
+**Abstract classes can have all the things that regular classes do but we cant create their object directly
+and if a class is inheriting from the abstract classit must either provide the impementation for the abstract method
+or it must be declared as abstract
+1) We can have final and abstract keywords with a method
+2) We can have static and abstract keywords with a method
+3) Abstract cant be used in fields( wont make sense because fields dont have body)
+=======================================================================================================
+Interfaces:
+Is also used in java to achieve abstraction
+we can create an interface with keyword interface
+interface Human{
+the fields are always public static and final!!
+}

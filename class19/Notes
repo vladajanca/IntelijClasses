@@ -1,0 +1,27 @@
+Access Morifiers in java:
+-Access modifiers allow us to control the visibility of class members(fields, methods, constructor etc)
+and clasess itself in Java.
+-There are 4 access levels and 3 keywords that we can use to define those access levels,
+ forth level is applied when we dont use any keyword
+ -Levels from most restricted to less are:
+ 1)Private(private is also keyword)
+ 2)Default(no keyword)
+ 3)Protected(protected keywoord)
+ 4)Public.(public keyword)
+ -Rules
+   1)we should always prefer private access modifier for fields.Because fields contain data
+   and the methods of your class might use that data to preform some tasks, if we dont preform
+   sanity checks before setting the values to these fields our classes and methods might
+   misbehave also the access of the data should be restricted so that not everyone can access the data
+   ***A sanity check or sanity test is a basic test to quickly evaluate whether a claim
+   or the result of a calculation can possibly be true. It is a simple check to see if the produced
+   material is rational (that the material's creator was thinking rationally, applying sanity).
+   2)We cant use access modifier with local variables. Because they live only inside certain
+   block of code and for short period of time.
+   **Fields should be 99% time private and methods should be public
+   ===================================================================================================
+ CONSTRUCTORS
+ -constructors in java allows us to set the values of the fields of a class
+ -Constructor is not a method (even though it has a lot of similarities with methods) it is block of code
+ -if there is no constructor in the class, complier automaticlly creates a default constructor
+ -Purpose of constructor is to give initial values to the fields of the class

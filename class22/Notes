@@ -1,0 +1,29 @@
+Super Keyword:
+"super" is a keyword like "this" keyword, but it refers to the parent class object.
+We can use super in 3 diferent ways.
+1) To access the super class variables if we have same name variables in super class
+and base class.
+2)if we have same method namse in parent and child class we can use super keyword to access
+the parent class method, otherwise by default java refers to the child class method
+3)As constractor dont participate in inheritance we can use super() to call the
+constructor from parent class
+Rules:
+if we have constructor in parent class that take 2 arguments we must have a constructor inside a child class
+that at least takes those 2 arguments
+2)we cant use this() and super() inside the same constructor.
+3)super cant be used in static methods
+=============================================================================================================
+Method overloading in Java
+if we have same name method in the class with different number of parameters or diferent
+sequence of parameters or different datatypes of the parameters it is called METHOD OVERLOADING.
+class calculator{
+void add(int number1, int number2){
+
+}
+void add(int number, int number1, int number2){
+
+}
+void add(int number,int numebr1, int number3){
+
+}
+We can overload methods only if we change number of parametars, sequence of parametars
