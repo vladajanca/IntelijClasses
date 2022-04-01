@@ -15,17 +15,16 @@ public class Task1 {
     }
 }
 interface Shape{
-    double pi=3.14;
     double calculateArea(double x);
     double calculatePerimeter(double x);
 }
 class Circle implements Shape{
 
     public double calculateArea(double x) {
-        return pi*x*x;
+        return Math.PI*Math.pow(x,2);
     }
     public double calculatePerimeter(double x) {
-        return 2*x*pi;
+        return 2*Math.PI*x;
     }
 }
 class Square implements Shape{
